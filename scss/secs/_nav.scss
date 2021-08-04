@@ -1,0 +1,57 @@
+
+.navbar{
+    &-collapse{
+        flex-grow: 0;
+    }
+    &-nav{
+        a{
+            font-weight: 500;
+            font-size: 16pt;
+            color: #fff !important;
+            padding: 25px 18px !important;
+            
+        }
+        
+    }
+    .nav-link:hover{
+        color: $colorYellow !important;
+    }
+    
+}
+
+
+@include responsive_1441{
+    
+}
+@include responsive_1440{
+    
+}
+@include responsive_1024{
+    
+}
+@include responsive_768{
+    .navbar{
+        &-nav{
+            a{
+                font-weight: 500;
+                font-size: 14pt;
+                line-height: 32pt;
+                padding: 0 !important;
+            }
+            
+        }
+    }
+}
+@include responsive_359{
+    .navbar{
+        &-nav{
+            a{
+                font-weight: 500;
+                font-size: 10pt;
+                line-height: 32pt;
+                padding: 0 !important;
+            }
+            
+        }
+    }
+}

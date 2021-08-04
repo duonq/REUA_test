@@ -1,0 +1,101 @@
+.footer{
+    background-color: $colorBlue;
+    text-align: center;
+    padding: 50px;
+    &__logo{
+        padding: 30px 0;
+    }
+    &__follow{
+        @include d-flex;
+        padding: 0 103px;
+        margin: 20px auto;
+        &-contact{
+                font-size: 14pt;
+                line-height: 26pt;
+            i{
+                @include widthHeight(35px, 35px);
+                background-color:  #fff;
+                line-height: 35px;
+                text-align: center;
+                border-radius: 50%;
+                color: $colorBlue;
+                margin-right: 5px;
+            }
+            a{
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+    }
+    p{
+        font-size: 12pt;
+        line-height: 26pt;
+        color: #fff;
+        font-weight: 400;
+        margin: 40px auto;
+        opacity: 0.6;
+    }
+}
+
+@include responsive_1441{
+    
+}
+@include responsive_1440{
+    
+}
+@include responsive_1024{
+    .footer__follow{
+        padding: 0;
+    }
+}
+@include responsive_768{
+    .footer{
+        padding: 20px;
+        &__logo{
+            padding: 40px;
+            margin: 0;
+        }
+        &__follow{
+            margin: 0;
+            flex-direction: column;
+            padding: 0;
+            text-align: left;
+            &-contact{
+                margin-top: 20px;
+                a{
+                    font-size: 12pt;
+                }
+            }
+        }
+    }
+}
+@include responsive_359{
+    .footer{
+        padding: 20px 0;
+        &__logo{
+            padding: 40px;
+            margin: 0;
+        }
+        &__follow{
+            margin: 0;
+            flex-direction: column;
+            padding: 0;
+            text-align: left;
+            &-contact{
+                margin-top: 20px;
+                i{
+                    @include widthHeight( 20px, 20px);
+                    margin: auto;
+                    line-height: 20px;
+                    font-size: 10pt;
+                }
+                a{
+                    font-size: 10pt;
+                }
+            }
+        }
+        p{
+            font-size: 8pt;
+        }
+    }
+}

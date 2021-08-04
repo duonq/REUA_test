@@ -1,0 +1,92 @@
+@import '../components/input';
+@import '../components/button';
+
+.contact{
+    background: url("/images/bg_footer2_03.png");
+    h3{
+        text-align: center;
+    }
+    p{
+        font-size: 16pt;
+        line-height: 26pt;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px auto;
+        max-width: 600px;
+        &:nth-child(5){
+            font-size: 12pt;
+            max-width: 650px;
+            margin: 10px auto;
+            span{
+                color: $colorYellow;
+            }
+        }
+    }
+    form{
+        margin: 0 auto;
+        max-width: 650px;
+        button{
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@include responsive_1441{
+    
+}
+@include responsive_1440{
+    
+}
+@include responsive_1024{
+    
+}
+@include responsive_768{
+    .container{
+        padding: 0 20px;
+    }
+    .contact{
+        h3{
+            font-size: 20pt;
+            padding: 0 20px;
+        }
+        p{
+            font-size: 14pt;
+            padding: 0 20px;
+        }
+        p:nth-child(5){
+            font-size: 10pt;
+        }
+        form{
+            padding: 0 20px;
+        }
+    }
+}
+@include responsive_359{
+    .contact{
+        h3{
+            font-size: 18pt;
+            line-height: 24pt;
+        }
+        p{
+            font-size: 10pt;
+            line-height: 22pt;
+            margin: 10px auto;
+        }
+        p:nth-child(5){
+            font-size: 10pt;
+        }
+    }
+    textarea,
+    .input-contact{
+        padding: 8px 15px;
+        font-size: 12pt;
+    }
+    .contact-btn{
+        font-size: 12pt;
+        max-width: 100%;
+        max-height: 40px;
+        line-height: 40px;
+    }
+}

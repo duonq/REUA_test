@@ -1,0 +1,122 @@
+.slide{
+    background: url('/images/bg_slide_03.png') top center/cover no-repeat;
+    padding-bottom: 90px;
+    .container{
+        .row{
+            margin-top: 60px;
+        }
+        .row:last-child{
+            margin-top: 100px;
+        }
+    }
+   
+    &-card{
+        padding: 0 20px;
+        background-color: #fff;
+        border: 0.5px solid rgb(241, 237, 237);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease;
+        height: 100%;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            .slide__title--size-m{
+                color: #0d67c8;
+            }
+        }
+        
+    }
+    &__img{
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+    &__title{
+        &--size-m{
+            font-size: 16pt;
+            font-weight: 500;
+            line-height: 26pt;
+            text-align: center;
+        }
+        &--size-s{
+            font-weight: 400;
+            font-size: 14pt;
+            line-height: 24pt;
+            text-align: justify;
+            color: #3e4d52;
+            margin-top: 20px;
+            padding-bottom: 25px;
+            span{
+                text-transform: uppercase;
+                font-size: 16pt;
+                font-weight: bold;
+            }
+        }
+    }
+    
+}
+
+
+@include responsive_1441{
+    
+}
+@include responsive_1440{
+    
+}
+@include responsive_1024{
+    .slide__title--size-m{
+        font-size: 14pt;
+    }
+    .slide__title--size-s{
+        font-size: 12pt;
+    }
+}
+@include responsive_768{
+    .slide{
+        padding: 0 20px;
+        h3{
+            font-size: 20pt;
+        }
+        &-card{
+            padding: 30px;
+        }
+        .row{
+            margin-top: 0 !important;
+            .col-md-3{
+                margin-top: 30px;
+            }
+        }
+    }
+    
+}
+@include responsive_359{
+    .slide{
+        h3{
+            font-size: 18pt;
+            line-height: 24pt;
+        }
+        &-card{
+            padding: 10px 20px;
+        }
+        .row{
+            margin-top: 0 !important;
+            .col-md-3{
+                margin-top: 30px;
+            }
+        }
+    }
+    .slide__title--size-m{
+        font-size: 16pt;
+        line-height: 24pt;
+    }
+    .slide__title--size-s{
+        font-size: 12pt;
+        line-height: 20pt;
+    }
+}
+@media (min-width: 768px)and (max-width: 1024px){
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}

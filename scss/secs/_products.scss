@@ -1,0 +1,303 @@
+@import '../valiable';
+@import '../components/button';
+.products{
+    h3{
+        text-align: center;
+        margin-top: 100px;
+    }
+    h5{
+        font-size: 20pt;
+        line-height: 26pt;
+        font-weight: bold;
+        color: $colorBlue;
+        text-align: center;
+        padding-top: 20px;
+    }
+    &-card{
+        margin-top: 70px;
+        .row{
+            .col-md-3{
+                padding-left: 0;
+                padding-right: 0;
+                &:first-child{
+                    .card:first-child{
+                        background-color: #f3f7fc;
+                    }
+                    .checktick{
+                        p{
+                            font-weight: 400 !important;
+                            color: $colorGray !important;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .card{
+                        background-color: #e6f0f9;
+                    }
+                }
+                &:nth-child(3){
+                    .card{
+                        background-color: #dbe8f7;
+                    }
+                }
+                &:nth-child(4){
+                    .card{
+                        background-color: #cfe1f4;
+                    }
+                }
+            }
+        }
+    }
+    .card{
+        height: 100%;
+        padding: 23px;
+        transition: 0.3s ease;
+        border: none;
+        border-radius: 0;
+        &:hover{
+            cursor: pointer;
+            z-index: 1;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+        &-body{
+            padding: 0;
+            margin-bottom: 50px;
+            &__title{
+                font-size: 14pt;
+                line-height: 24pt;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .checktick{
+                display: table;
+                margin-top: 13px;
+                &__icon{
+                    display: table-cell;
+                    @include widthHeight(25px, 25px);
+                    background-color: $colorYellow;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin-right: 13px;
+                    display: inline-block;
+                    i{
+                        color: #fff;
+                        font-style: normal;
+                    }
+                }
+                p{
+                    display: table-cell;
+                    font-size: 12pt;
+                    font-weight: 400;
+                    line-height: 24pt;
+                    color: $colorGray;
+                    text-align: justify;
+                }
+                &:last-child{
+                    p{
+                        font-weight: 600;
+                        color: $colorGrayDark;
+                    }
+                }
+            }
+        }
+        &-footer{
+            padding: 0;
+            border: none;
+            background: none;
+            p{
+                font-size: 16pt;
+                font-weight: 500;
+                line-height: 24pt;
+                color: $colorGrayDark;
+                text-align: center;
+                font-style: italic;
+                margin-bottom: 30px;
+            }
+        }
+        
+    }
+    &__title-table{
+        margin-top: 80px;
+        margin-bottom: 30px;
+        font-size: 16pt;
+        line-height: 26pt;
+        font-weight: 500;
+        color: $colorYellow;
+        text-align: center;
+    }
+
+    &-table{
+        margin-bottom: 118px;
+        .border{
+            padding: 7px;
+            box-shadow: 0px 4px 16px rgb(0 0 0 / 15%);
+        }
+        padding: 0 103px;
+        .table{
+            margin: 0 auto;
+        }
+        thead{
+            tr{
+                background-color: $colorBlue;
+                th{
+                    border: none;
+                    color: #fff;
+                    font-size: 16pt;
+                    line-height: 46pt;
+                    font-weight: 600;
+                    white-space: nowrap !important;
+                    text-align: center;
+                }
+                th:nth-child(2){
+                    text-align: left;
+                    padding-left: 23px;                    
+                }
+            }
+        }
+        tbody{
+            tr{
+                background-color: #fff;
+                th{
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 16pt;
+                    line-height: 46pt;
+                    color: $colorGray;
+                    width: 78px;
+                }
+                td{
+                    font-weight: 600;
+                    font-size: 14pt;
+                    line-height: 46pt;
+                    color: $colorGrayDark;
+                    text-align: center;
+                    padding: 0 23px;
+
+                }
+                td:nth-child(2){
+                    text-align: left;
+                }
+                td:nth-child(3){
+                    font-weight: normal;
+                }
+                
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(6),
+                &:nth-child(8){
+                    background-color: #f3f7fc;
+                }
+            }
+        }
+    }
+}
+
+@include responsive_1441{
+    
+}
+@include responsive_1440{
+    
+}
+@include responsive_1024{
+    
+    
+    
+}
+@include responsive_768{
+    .products{
+        h3{
+            font-size: 20pt;
+        }
+        .card{
+            padding: 30px 40px;
+            margin-top: 10px;
+        }
+        &-card{
+            padding: 0 20px;
+        }
+        &-table{
+            padding: 0;
+            thead tr th{
+                font-size: 14pt;
+                white-space: normal !important;
+                line-height: 24pt;
+            }
+            tbody tr {
+                td{
+                padding: 0 10px;
+                font-size: 12pt;
+                line-height: 24pt;
+                }
+                th{
+                    font-size: 14pt;
+                }
+            }
+            
+        }
+    }
+}
+@include responsive_359{
+    .products{
+        padding: 0 20px;
+        h3{
+            font-size: 17pt;
+            margin-top: 0;
+        }
+        .card{
+            padding: 10px 20px;
+            margin-top: 10px;
+            &-body{
+                .checktick{
+                    p{
+                        font-size: 10pt;
+                    }
+                }
+                &__title{
+                    font-size: 12pt;
+                }
+            }
+            &-footer{
+                p{
+                    font-size: 12pt;
+                }
+            }
+        }
+        &-card{
+            padding: 0 20px;
+            margin-top: 20px;
+        }
+        &-table{
+            padding: 0;
+            thead tr th{
+                font-size: 14pt;
+                white-space: normal !important;
+                line-height: 24pt;
+            }
+            tbody tr {
+                td{
+                padding: 0 10px;
+                font-size: 12pt;
+                line-height: 24pt;
+                }
+                th{
+                    font-size: 14pt;
+                }
+            }
+            
+        }
+        &__title-table{
+            font-size: 12pt;
+            line-height: 22pt;
+            text-align: justify;
+        }
+    }
+    .card-btn{
+        height: 45px !important;
+        font-size: 12pt;
+    }
+    h5{
+        font-size: 16pt !important;
+    }
+    
+}

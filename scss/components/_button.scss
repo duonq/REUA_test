@@ -1,0 +1,25 @@
+button{
+    font-family: Montserrat !important;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16pt;
+    line-height: 26pt;
+    font-weight: 500;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.btn-header{
+    padding: 10px 30px;
+    background-color: $colorYellow;
+}
+.card-btn{
+    @include widthHeight(100%, 60px);
+    background-color: $colorBlue;
+}
+.contact-btn{
+    @include widthHeight(244px, 60px);
+    background-color: $colorBlue;
+    line-height: 60px;
+}

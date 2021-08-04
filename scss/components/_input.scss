@@ -1,0 +1,32 @@
+input{
+    font-family: Montserrat !important;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 16pt;
+    line-height: 26pt;
+    color: #3e4d52;
+}
+.input-header{
+    padding: 10px 15px 10px 50px;
+}
+.input-contact{
+    padding: 15px 30px;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+textarea{
+    width: 100%;
+    border: none;
+    font-size: 16pt;
+    line-height: 26pt;
+    color: #3e4d52;
+    padding: 15px 30px;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    min-height: 150px;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
